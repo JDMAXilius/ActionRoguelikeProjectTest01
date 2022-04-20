@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Documents\\GitHub\\ActionRoguelike\\Source\\ActionRoguelike\\ActionRoguelike.Build.cs",
+		"D:\\Documents\\GitHub\\ActionRoguelike\\Source\\ActionRoguelike.Target.cs",
+		"D:\\Documents\\GitHub\\ActionRoguelike\\Source\\ActionRoguelikeEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}
