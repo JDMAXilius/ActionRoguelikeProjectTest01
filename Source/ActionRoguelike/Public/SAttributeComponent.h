@@ -24,6 +24,7 @@ protected:
 	UPROPERTY(BlueprintReadOnly)
 	float Health;
 
+
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
