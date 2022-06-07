@@ -19,24 +19,7 @@ bool USAttributeComponent::AppplyDamageOWN(float delta)
 {
 	Health += delta;
 
+	OnHealthChanged.Broadcast(nullptr,this, Health,delta);
+
 	return true;
 }
-
-// Called when the game starts
-void USAttributeComponent::BeginPlay()
-{
-	Super::BeginPlay();
-
-	// ...
-	
-}
-
-
-// Called every frame
-void USAttributeComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
-{
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
-	// ...
-}
-

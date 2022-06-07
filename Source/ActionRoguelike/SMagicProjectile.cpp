@@ -16,7 +16,7 @@ ASMagicProjectile::ASMagicProjectile()
 	
 	SphereComp = CreateDefaultSubobject<USphereComponent>("SphereComp");
 	SphereComp->SetCollisionProfileName("Projectile");
-	//SphereComp->OnComponentBeginOverlap.AddDynamic(this, ASMagicProjectile::OnActorOverlap);
+	SphereComp->OnComponentBeginOverlap.AddDynamic(this, ASMagicProjectile::OnActorOverlap);
 	RootComponent = SphereComp;
 
 	EffectComp = CreateDefaultSubobject<UParticleSystemComponent>("EffectComp");
